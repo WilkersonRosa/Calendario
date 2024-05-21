@@ -1,10 +1,107 @@
-*{
-    margin: 0;
-    padding: 0;
-    
+html {
+  scroll-behavior: smooth;
+}
+ 
+:target {
+  scroll-margin-top: .8em;
+}
+
+body {
+    font-size: 15pt;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(217deg, rgba(255, 0, 0, .8), rgba(255, 0, 0, 0) 70.71%),
+    linear-gradient(127deg, rgba(0, 255, 0, .8), rgba(0, 255, 0, 0) 70.71%),
+    linear-gradient(336deg, rgba(0, 0, 255, .8), rgba(0, 0, 255, 0) 70.71%);
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
 }
 
 header h1{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    text-shadow: 0 0 5px white;
+  text-shadow: 0 0 5px #FFf;
+}
+
+#global {
+  background: #494949;
+  padding: 2rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+#meses {
+  border: solid 1px #A8A8A8;
+  border-radius: 7px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  align-items: center;
+  justify-content: space-between;
+  height: 450px;
+}
+
+#meses a{
+  text-decoration: none;
+  color: #A8A8A8;
+}
+
+#mescontainer {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  max-height: 700px;
+  padding: 1rem rem;
+}
+
+.mescontent {
+  border: solid 1px #A8A8A8;
+  border-radius: 7px;
+  margin: 2rem;
+  padding: .5rem;
+  max-height: 650px;
+}
+
+.mescontent h2{
+  color: #A8A8A8;
+}
+.semana {
+  display: flex;
+  margin: 0 15px;
+}
+.semana span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: #A8A8A8;
+  border-radius: 50px;
+  margin: 14px;
+  box-shadow: 5px 5px 7px #000000C7;
+}
+
+.dias {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+.dias span{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #6B06FF;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 14px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 5px 5px 7px #000000C7;
+}
+
+.dias .mout{
+  background: #D6C9EA;
 }
